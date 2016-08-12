@@ -10,6 +10,7 @@
   <body>
     <div class="container">
       <h1> Welcome to the Epicodus Coding Track Suggester!</h1>
+      <form id="selections">
       <div id="forms">
       <h3>What type of Company would you like to wor for?</h3>
       <select class="form-control" id="companyType">
@@ -51,11 +52,15 @@
         <option>Winter</option>
         <option>Spring</option>
       </select>
-    </div>
-    <div id="results">
-      <p> As result of your answers you should choose the blank track</p>
 
+      <br> <br>
+      <button type="submit" class="btn">Show me my track suggestion</button>
     </div>
+
+    <div id="yourResults">
+      <p>Heres is the track that best fits you:</p>
+    </div>
+  </form>
   </div>
 
 
