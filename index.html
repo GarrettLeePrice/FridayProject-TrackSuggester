@@ -10,58 +10,175 @@
   <body>
     <div class="container">
       <h1> Welcome to the Epicodus Coding Track Suggester!</h1>
-      <form id="selections">
-      <div id="forms">
-      <h3>What type of Company would you like to wor for?</h3>
+  <form id="selections">
+    <!-- <div class="form-group">
+      <label for="food">What type of Company would you like to wor for?</label>
       <select class="form-control" id="companyType">
         <option>Enterprise Company</option>
         <option>Start-up Company</option>
       </select>
+    </div> -->
+    <div class="form-group">
+    <div id="companyType">
+        <label for="companyType">What type of Company would you like to wor for?</label>
+        <div class="radio">
+            <label><input name="companyType" type="radio" value="enterprise"> Enterprise Company</label>
+        </div>
+        <div class="radio">
+            <label><input name="companyType" type="radio" value="startup">Start-up Company</label>
+        </div>
+    </div>
 
-      <br><br>
+    <div class="form-group">
+    <div id="projectType">
+        <label for="projectType">What type of projects would you like to work on?</label>
+        <div class="radio">
+            <label><input name="projectType" type="radio" value="android"> Android Apps</label>
+        </div>
+        <div class="radio">
+            <label><input name="projectType" type="radio" value="web">Website user interface</label>
+        </div>
+        <div class="radio">
+            <label><input name="projectType" type="radio" value="software">Software</label>
+        </div>
+    </div>
+    <!-- <br><br>
       <h3>What type of projects would you like to create?</h3>
+    <div class="form-group">
       <select class="form-control" id="projectType">
         <option>Android Apps</option>
         <option>Website user interface</option>
         <option>Software</option>
       </select>
+    </div> -->
 
-      <br><br>
+    <div class="form-group">
+    <div id="experienceType">
+        <label for="experienceType">What type of Company would you like to wor for?</label>
+        <div class="radio">
+            <label><input name="experienceType" type="radio" value="art">Art/Design</label>
+        </div>
+        <div class="radio">
+            <label><input name="experienceType" type="radio" value="webserver">Web server management</label>
+        </div>
+        <div class="radio">
+            <label><input name="experienceType" type="radio" value="codingHTML">Coding HTML/CSS</label>
+        </div>
+        <div class="radio">
+            <label><input name="experienceType" type="radio" value="codingcsharp">Coding C#/Java/PHP/Ruby</label>
+        </div>
+    </div>
+      <!-- <br><br>
       <h3>What is your previous experience?</h3>
-      <select class="form-control" id="experience">
-        <option value="art">Art/Design</option>
-        <option value="server">Web server management</option>
-        <option value="html">Coding HTML or CSS</option>
-        <optionvalue="c#">Coding C#/Java/PHP</option>
-      </select>
 
+    <div class="form-group">
+      <select class="form-control" id="experienceType">
+        <option>Art/Design</option>
+        <option>Web server management</option>
+        <option>Coding HTML or CSS</option>
+        <option>Coding C#/Java/PHP</option>
+      </select>
+    </div> -->
+    <div class="form-group">
+    <div id="location">
+        <label for="location">What type of Company would you like to wor for?</label>
+        <div class="radio">
+            <label><input name="location" type="radio" value="east">East Coast USA</label>
+        </div>
+        <div class="radio">
+            <label><input name="location" type="radio" value="west">West Coast USA</label>
+        </div>
+        <div class="radio">
+            <label><input name="location" type="radio" value="mid">Midwest USA</label>
+        </div>
+        <div class="radio">
+            <label><input name="location" type="radio" value="outside">Outside the USA</label>
+        </div>
+    </div>
+
+
+
+
+<!--
       <br><br>
       <h3>Where do you currently live? </h3>
+    <div class="form-group">
       <select class="form-control" id="location">
         <option>East Coast USA</option>
         <option>West Coast USA</option>
         <option>MidWest USA</option>
         <option>Outside the USA</option>
       </select>
+    </div> -->
 
-      <br><br>
+
+    <div class="form-group">
+    <div id="season">
+        <label for="season">What type of Company would you like to wor for?</label>
+        <div class="radio">
+            <label><input name="season" type="radio" value="summer">Summer</label>
+        </div>
+        <div class="radio">
+            <label><input name="season" type="radio" value="fall">Fall</label>
+        </div>
+        <div class="radio">
+            <label><input name="season" type="radio" value="winter">Winter</label>
+        </div>
+        <div class="radio">
+            <label><input name="season" type="radio" value="spring">Spring</label>
+        </div>
+    </div>
+
+
+      <!-- <br><br>
       <h3>What is your favorite season?</h3>
+    <div class="form-group">
       <select class="form-control" id="season">
         <option>Summer</option>
         <option>Fall</option>
         <option>Winter</option>
         <option>Spring</option>
       </select>
+    </div>
+  </form> -->
 
       <br> <br>
-      <button type="submit" class="btn">Show me my track suggestion</button>
+      <button type="submit" id=#selections>Show me my track suggestion</button>
+  </div>
+    <br>
+    <br>
+    <div id="css-design">
+      <p>The CSS/Desgin track best fits you!</p>
+      <img src="img/css.png">
+      <img src="img/design.png">
     </div>
 
-    <div id="yourResults">
-      <p>Heres is the track that best fits you:</p>
+    <div id="csharp-dotnet">
+      <p>The C#/.NET track bets fits you!</p>
+        <img src="img/csharp.png">
+        <img src="img/dotnet.png">
     </div>
-  </form>
+
+    <div id="ruby-rails">
+      <p>The Ruby/Rails track bets fits you!</p>
+        <img src="img/ruby.png">
+        <img src="img/rails.png">
+    </div>
+
+</div>
+
   </div>
+
+  <!-- Ruby/Rails
+  PHP/Drupal
+  Java/Android
+  CSS/Design
+  C#/.NET -->
+
+
+
+
+
 
 
   </body>
