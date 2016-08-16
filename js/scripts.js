@@ -11,22 +11,34 @@ $(document).ready(function() {
 
 
 
- if (companyInput === "enterprise" && projectInput == "software") {
-   $("#csharp-dotnet").show();
- }
-if (projectInput === "web" && experienceInput == "art" || "codingHTML") {
+if (companyInput === "startup") {
   $("#css-design").show();
 }
-if (experienceInput == "codingcsharp" && location == "west" || "outside") {
-  $("#ruby-rails").show();
+
+if (companyInput != "startup" && projectInput === "software") {
+   $("#csharp-dotnet").show();
+ }
+
+if (companyInput != "startup" && projectInput === "android") {
+    $("#java-android").show();
 }
+
+//
+// if (projectInput === "android" && companyInput === "enterprise" || "startup")
+//     $("#java-android").show();
+//
+// }
+// if (experienceInput === "codingcsharp" && companyInput === "startup") {
+//   $("#ruby-rails").show();
+// }
 
 
  event.preventDefault();
 
 
   });
- });
+});
+
 
 
 
