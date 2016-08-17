@@ -10,18 +10,118 @@ $(document).ready(function() {
   $("input:radio[name=season]:checked").val();
 
 
-
-if (companyInput === "startup") {
+if (companyInput === "startup" && projectInput === "webFront" || experienceInput === "codingHTML") {
   $("#css-design").show();
 }
 
-if (companyInput != "startup" && projectInput === "software") {
-   $("#csharp-dotnet").show();
+if (companyInput === "enterprise" && projectInput === "software" || projectInput === "webBack" || experienceInput === "webServer") {
+   $("#csharp-dotnet" ).show();
  }
 
-if (companyInput != "startup" && projectInput === "android") {
-    $("#java-android").show();
+if (companyInput === "enterprise" && projectInput === "android") {
+    $("#java-android" ).show();
 }
+
+if (companyInput === "startup" && projectInput === "interactive" || experienceInput === "codingCsharp") {
+    $("#ruby-rails" ).show();
+}
+event.preventDefault();
+
+
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //
+  // var javaCounter;
+  // var designCounter;
+  // var csharpCounter;
+  //
+  // if (companyInput === "startup") {
+  //   designCounter+1;
+  // } else if ( companyInput === "enterprise") {
+  //   javaCounter+1;
+  // } else {
+  //   csharpCounter+1;
+  // }
+  //
+  //
+  //  if (javaCounter=0) {
+  //   $("#java-android").show();
+  //
+  // } else if (designCounter=3) {
+  //     $("#css-design").show();
+  //
+  // } else { ("#ruby-rails").show()
+  //
+  // }
+
+
+    // event.preventDefault();
+
+
+ //   });
+ // });
+
+
+
+
+
+
+
+
+
+//
+//   if (designCounter=1) {
+//     $("#css-design").show();
+//   }
+// if (companyInput === "startup") {
+//   $("#css-design").show();
+// }
+//
+// if (companyInput != "startup" && projectInput === "software") {
+//    $("#csharp-dotnet").show();
+//  }
+//
+// if (companyInput != "startup" && projectInput === "android") {
+//     $("#java-android").show();
+// }
+//
+//
+// var javaCounter;
+// var designCounter;
+//
+// if (companyInput === "startup") {
+//   designCounter++;
+// }
+
+
+
+
+
 
 //
 // if (projectInput === "android" && companyInput === "enterprise" || "startup")
@@ -29,15 +129,7 @@ if (companyInput != "startup" && projectInput === "android") {
 //
 // }
 // if (experienceInput === "codingcsharp" && companyInput === "startup") {
-//   $("#ruby-rails").show();
-// }
 
-
- event.preventDefault();
-
-
-  });
-});
 
 
 
