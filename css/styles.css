@@ -1,3 +1,54 @@
+h2 {
+  font-size: 32pt;
+  color: #424d57;
+  font-family: Tahoma, Geneva, sans-serif;
+
+}
+
+.container {
+  text-align: center;
+  background-color: lightgrey;
+}
+
+body {
+  background-color: orange;
+}
+
+.jumbotron {
+  margin-top: 25px;
+}
+
+#companyType {
+  background-color: #99a6b2;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+#projectType {
+  background-color: #808080;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+#experienceType {
+  background-color: #778899;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+#location {
+  background-color: darkgrey;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+#season {
+  background-color: #808080;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+
 #css-design {
   display: none;
 }
