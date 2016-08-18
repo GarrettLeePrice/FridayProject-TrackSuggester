@@ -8,7 +8,7 @@
 
 Uses html,Javascript,jquery,bootstrap to collect user input and determine a fitting course track.
 
-Visit -  http://www.garrettleeprice.github.io/FridayProject-TrackSuggester
+Visit -  http://garrettleeprice.github.io/FridayProject-TrackSuggester
 
 ## Setup/Installation Requirements
 
