@@ -2,7 +2,7 @@
 
 ## Determines Epicodus track for prospective students, using user input 8/14/16
 
-#### By **Garrett Price
+#### By Garrett Price
 
 ## Description
 
@@ -25,4 +25,4 @@ Visit -  http://www.garrettleeprice.github.io/FridayProject-TrackSuggester
 
 *GPL*
 
-Copyright (c) 2016 **Garrett Price
+Copyright (c) 2016 Garrett Price
