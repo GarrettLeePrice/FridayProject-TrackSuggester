@@ -1,123 +1,139 @@
-<!DOCTYPE html><html>
-  <head>
-    <title>Epicodus Track Suggester</title>
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h2> Welcome to the Epicodus Coding Track Suggester!</h2>
-      </div>
-      <form id="selections">
-        <div class="form-group">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Epicodus Track Suggester</title>
+  <link charset="utf-8" href="css/bootstrap.css" media="screen" rel=
+  "stylesheet" title="no title">
+  <link charset="utf-8" href="css/styles.css" media="screen" rel="stylesheet"
+  title="no title">
+  <script src="js/jquery-3.1.0.min.js" type="text/javascript">
+  </script>
+  <script src="js/scripts.js" type="text/javascript">
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Welcome to the Epicodus Coding Track Suggester!</h2>
+    </div>
+    <form id="selections" name="selections">
+      <div class="form-group">
         <div id="companyType">
-          <label for="companyType">What type of Company would you like to work for?</label>
+          <label for="companyType">What type of Company would you like to work
+          for?</label>
           <div class="radio">
-              <label><input name="companyType" type="radio" value="startup">Start-up Company</label>
+            <label><input name="companyType" type="radio" value=
+            "startup">Start-up Company</label>
           </div>
           <div class="radio">
-              <label><input name="companyType" type="radio" value="enterprise"> Enterprise Company</label>
+            <label><input name="companyType" type="radio" value="enterprise">
+            Enterprise Company</label>
           </div>
         </div>
       </div>
       <div class="form-group">
-      <div id="projectType">
-          <label for="projectType">What type of projects would you like to work on?</label>
+        <div id="projectType">
+          <label for="projectType">What type of projects would you like to work
+          on?</label>
           <div class="radio">
-              <label><input name="projectType" type="radio" value="android"> Android Apps</label>
+            <label><input name="projectType" type="radio" value="android">
+            Android Apps</label>
           </div>
           <div class="radio">
-              <label><input name="projectType" type="radio" value="webFront">Website user interface</label>
+            <label><input name="projectType" type="radio" value=
+            "webFront">Website user interface</label>
           </div>
           <div class="radio">
-              <label><input name="projectType" type="radio" value="webBack">Website back-end</label>
+            <label><input name="projectType" type="radio" value=
+            "webBack">Website back-end</label>
           </div>
           <div class="radio">
-              <label><input name="projectType" type="radio" value="software">Software</label>
+            <label><input name="projectType" type="radio" value=
+            "software">Software</label>
           </div>
           <div class="radio">
-              <label><input name="projectType" type="radio" value="interactive">Interactive web applications</label>
+            <label><input name="projectType" type="radio" value=
+            "interactive">Interactive web applications</label>
           </div>
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <div id="experienceType">
-          <label for="experienceType">What previous experience do you have?</label>
-          <div class="radio">
-              <label><input name="experienceType" type="radio" value="webServer">Web server management</label>
-          </div>
-          <div class="radio">
-              <label><input name="experienceType" type="radio" value="codingHTML">Coding HTML/CSS</label>
-          </div>
-          <div class="radio">
-              <label><input name="experienceType" type="radio" value="codingCsharp">Coding C#/Java/PHP/Ruby</label>
-          </div>
-      </div>
-    </div>
-    <div id="location">
       <div class="form-group">
-        <label for="location">Where are you from?</label>
-        <div class="radio">
-            <label><input name="location" type="radio" value="east">East Coast USA</label>
+        <div id="experienceType">
+          <label for="experienceType">What previous experience do you
+          have?</label>
+          <div class="radio">
+            <label><input name="experienceType" type="radio" value=
+            "webServer">Web server management</label>
+          </div>
+          <div class="radio">
+            <label><input name="experienceType" type="radio" value=
+            "codingHTML">Coding HTML/CSS</label>
+          </div>
+          <div class="radio">
+            <label><input name="experienceType" type="radio" value=
+            "codingCsharp">Coding C#/Java/PHP/Ruby</label>
+          </div>
         </div>
-        <div class="radio">
-            <label><input name="location" type="radio" value="west">West Coast USA</label>
-        </div>
-        <div class="radio">
-            <label><input name="location" type="radio" value="mid">Midwest USA</label>
-        </div>
-        <div class="radio">
-            <label><input name="location" type="radio" value="outside">Outside the USA</label>
+      </div>
+      <div id="location">
+        <div class="form-group">
+          <label for="location">Where are you from?</label>
+          <div class="radio">
+            <label><input name="location" type="radio" value="east">East Coast
+            USA</label>
+          </div>
+          <div class="radio">
+            <label><input name="location" type="radio" value="west">West Coast
+            USA</label>
+          </div>
+          <div class="radio">
+            <label><input name="location" type="radio" value="mid">Midwest
+            USA</label>
+          </div>
+          <div class="radio">
+            <label><input name="location" type="radio" value="outside">Outside
+            the USA</label>
           </div>
         </div>
       </div>
       <div class="form-group">
         <div id="season">
-        <label for="season">What is your favorite?</label>
-        <div class="radio">
-            <label><input name="season" type="radio" value="summer">Summer</label>
-        </div>
-        <div class="radio">
+          <label for="season">What is your favorite season?</label>
+          <div class="radio">
+            <label><input name="season" type="radio" value=
+            "summer">Summer</label>
+          </div>
+          <div class="radio">
             <label><input name="season" type="radio" value="fall">Fall</label>
-        </div>
-        <div class="radio">
-            <label><input name="season" type="radio" value="winter">Winter</label>
-        </div>
-        <div class="radio">
-            <label><input name="season" type="radio" value="spring">Spring</label>
+          </div>
+          <div class="radio">
+            <label><input name="season" type="radio" value=
+            "winter">Winter</label>
+          </div>
+          <div class="radio">
+            <label><input name="season" type="radio" value=
+            "spring">Spring</label>
           </div>
         </div>
-      </div>
+      </div><br>
+      <button class="btn btn-warning" type="submit">Show me my track
+      suggestion</button><br>
       <br>
-      <button class="btn btn-warning" type="submit">Show me my track suggestion</button>
-      <br><br>
-      <div id="csharp-dotnet">
-        <p>The C#/.NET track bets fits you!</p>
-          <img src="img/csharp.png">
-          <img src="img/dotnet.png">
+      <div id="#resultgraphics">
+        <div id="csharp-dotnet">
+        <p>The C#/.NET track bets fits you!</p><img src="img/csharp.png">
+        <img src="img/dotnet.png"></div>
+        <div id="css-design">
+        <p>The CSS/Desgin track best fits you!</p><img src="img/css.png">
+        <img src="img/design.png"></div>
+        <div id="ruby-rails">
+        <p>The Ruby/Rails track bets fits you!</p><img src="img/ruby.png">
+        <img src="img/rails.png"></div>
+        <div id="java-android">
+        <p>The Java/Android track best fits you!</p><img src="img/java.png">
+        <img src="img/android.png"></div>
       </div>
-
-      <div id="css-design">
-      <p>The CSS/Desgin track best fits you!</p>
-        <img src="img/css.png">
-        <img src="img/design.png">
-      </div>
-
-      <div id="ruby-rails">
-        <p>The Ruby/Rails track bets fits you!</p>
-          <img src="img/ruby.png">
-          <img src="img/rails.png">
-      </div>
-
-      <div id="java-android">
-        <p>The Java/Android track best fits you!</p>
-          <img src="img/java.png">
-          <img src="img/android.png">
-      </div>
-      </form>
-    </div>
-  </body>
+    </form>
+  </div>
+</body>
 </html>
